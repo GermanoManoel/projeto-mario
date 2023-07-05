@@ -45,3 +45,18 @@
     }
   
 }
+
+@media screen and (max-width:390px){
+    header div.logo{
+        margin: 10px 0px 10px 15px;
+    }
+
+    header div.logo img{
+        height: 70px;
+    }
+
+    header nav ul.opcoes_menu{
+        font-size: 1.1rem;
+        color: white;
+    }
+}
