@@ -1,0 +1,47 @@
+@media screen and (max-width:1153px) {
+    /* Configução da main */
+    main.conteudo{
+        flex-direction: column; 
+    }
+
+    div.titulo img.imagem_titulo{
+        height: 10rem;
+        max-width: 100%;
+    }
+
+    main.conteudo div.texto p{
+        max-width: 35rem;
+        font-size: .9rem;
+        color: white;
+        text-align: justify;
+        line-height: 1.5rem;
+        
+    }
+
+    div.informacao{
+       order: 2;
+       margin:-8rem 0rem 0rem 0rem;
+    }
+    
+    main.conteudo .imagem_mario{
+        margin: 3rem 0rem 0rem 0rem;
+        order: 1;
+      }
+
+      main.conteudo .imagem_mario img{
+        height: 80%;
+      }
+}
+
+@media screen and (max-width:688px){
+     main.conteudo{
+        flex-direction: column; 
+        margin-top: -20rem;
+    }
+
+    main.conteudo .imagem_mario{
+        margin: 25rem 0rem 0rem 0rem;
+        order: 1;
+    }
+  
+}

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(32, 32, 32);
+    font-family: 'Martian Mono', monospace;
+}
+
+/* Configuração do header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header div.logo{
+    margin: 10px 30px;
+}
+
+header div.logo img{
+    height: 77px;
+    transition: -8s;
+}
+
+header div.logo img:hover{
+    transform: scale(103%);
+    cursor: pointer;
+}
+
+header nav.menu{
+    display: flex;
+    align-items: center;
+    margin: 5px 25px;
+}
+
+header nav ul.opcoes_menu{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.opcoes_menu li{
+    margin-left: 1rem;
+}
+
+.opcoes_menu > li > a{
+    color: white;
+    text-decoration: none;
+    transition: 1.2s ease;
+}
+
+.opcoes_menu > li > a:hover{
+    opacity: .6;
+}
+
+/* Estilo da main */
+
+main.conteudo{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.informacao{
+    margin: 10px 0px 0px 2rem;
+}
+
+div.titulo{
+    margin:15px 18px 15px;
+    max-height: 100%;
+}
+
+div.titulo img.imagem_titulo{
+    height: 10rem;
+    max-width: 100%;
+}
+
+main.conteudo div.texto{
+    margin: 7px 26px;
+}
+
+main.conteudo div.texto p{
+    max-width: 35rem;
+    font-size: 1rem;
+    color: white;
+    text-align: justify;
+    line-height: 1.5rem;
+    
+}
+
+main.conteudo  button.botao_mario{
+   margin: 15px 0px 15px 26px;
+   width: 18rem;
+   height: 2.5rem;
+   font-size: 1.1rem;
+   cursor: pointer;
+   color: white;
+   border-radius: 3%;
+   border: 1px solid white;
+   background-color: transparent;
+   transition: 1.2s;
+}
+
+main.conteudo button.botao_mario:hover{
+    border: 1px solid rgb(247, 40, 33);
+    color: rgb(247, 40, 33);
+}
+
+/* Configuação da DIV imagem_mario */
+
+main.conteudo .imagem_mario{
+  margin: -7rem 2rem 0rem 0rem;
+}
+
+.imagem_mario img{
+    /* max-width: 35rem; */
+    max-width:100%;
+}
+
+/* Modal Mario */
+
+section.modal_mario{
+    background-color: rgba(30, 30, 32, 0.452);
+    width: 98.8vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: none; 
+}
+
+section.modal_mario .video_mario{
+    background-color: aliceblue;
+    height: 420px;
+    width: 700px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    overflow: hidden;   
+}
+
+section.modal_mario .botao_fechar{
+    background-color: rgb(253, 253, 253); 
+    max-width: 3rem; 
+    text-align: center;
+    height: 2.7rem;
+    padding-top: 10px; 
+    position: relative; 
+    left: 72%; 
+    top: 16%; 
+    font-size: 1.2rem; 
+    color: rgb(0, 0, 0); 
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+section.modal_mario .botao_fechar:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.video_mario iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
