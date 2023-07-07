@@ -20,7 +20,7 @@
 
     div.informacao{
        order: 2;
-       margin:-8rem 0rem 0rem 0rem;
+       margin:-4rem 0rem 0rem 0rem;
     }
     
     main.conteudo .imagem_mario{
@@ -31,10 +31,27 @@
       main.conteudo .imagem_mario img{
         height: 80%;
       }
+
+      section.modal_mario .botao_fechar{
+        position: fixed;
+        left: 50%; 
+        top: 16%; 
+        transform: translate(-50%,-50%);
+        width: 10rem;
+    }
+    
+
+    section.modal_mario .video_mario{
+        height: 350px;
+        max-width: 600px;
+    }
 }
 
 @media screen and (max-width:688px){
-     main.conteudo{
+
+    /* Configuaração do Header */
+
+    main.conteudo{
         flex-direction: column; 
         margin-top: -20rem;
     }
@@ -43,5 +60,46 @@
         margin: 25rem 0rem 0rem 0rem;
         order: 1;
     }
+    header nav ul.opcoes_menu{
+        gap: 0;
+    }
+    header nav ul.opcoes_menu{
+        font-size: 1.1rem;
+        color: white;
+    }
   
 }
+
+@media screen and (max-width:600px){
+    header div.logo{
+        margin: 10px 10px;
+    }
+
+    header div.logo img{
+        height: 70px;
+    }
+    
+    header nav.menu{
+        margin: 0px;
+        padding-right: 10px;
+    }
+
+    .opcoes_menu li{
+        margin-left: .9rem;
+        
+    }
+
+    section.modal_mario .botao_fechar{
+        position: fixed;
+        left: 50%; 
+        top: 25%; 
+        transform: translate(-50%,-50%);
+        width: 10rem;
+    }
+
+    section.modal_mario .video_mario{
+        height: 250px;
+        max-width: 400px;
+    }
+}
+
